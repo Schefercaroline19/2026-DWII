@@ -1,0 +1,109 @@
+/* Estilo geral */
+body {
+    background-color: #fff0f5; /* Rosa bem claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header h1 {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffc0cb; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 30px auto 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Rodapé */
+footer p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Imagem lateral esquerda */
+.decor-left {
+    position: fixed;
+    right: 2%;
+    bottom: 0;
+    height: 60vh; /* ocupa toda a altura da tela */
+    z-index: 5;
+    opacity: 0.95;
+}
+
+/* Foto */
+.decor-center {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px; /* Aumenta o tamanho da logo */
+    z-index: 10;
+    opacity: 1;
+    width: 200px; /* Defina a largura */
+    height: 200px; /* Defina a altura igual à largura */
+    border-radius: 50%; /* Arredonda os cantos */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+
+
+/* Título ajustado */
+header h1 {
+    margin-top: 250px; /* espaço para foto acima */
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffc0cb;
+    color: white;
+    text-align: center;
+    padding: px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Imagem lateral direita */
+.decor-right {
+    position: fixed;
+    top: 200px;
+    left: 5%;
+    bottom: 0;
+    height: 50vh; 
+    z-index: 5;
+    opacity: 0.95;
+}
+
+ /*responsividade*/
+ @media (max-width: 768px) {
+    .decor-left {
+        display: none;
+    }
+
+    .decor-center {
+        width: 120px;
+        top: 10px;
+    }
+
+    header h1 {
+        margin-top: 150px;
+    }
+ }
