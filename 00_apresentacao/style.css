@@ -1,109 +1,155 @@
 /* Estilo geral */
-body {
-    background-color: #fff0f5; /* Rosa bem claro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #4a4a4a;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center; 
 }
 
-/* Cabeçalho */
-header h1 {
-    width: 90%;
-    max-width: 600px;
-    background-color: #ffc0cb; 
+
+nav {
+    background-color: #ffc0cb;
     color: white;
+    padding: 12px;
     text-align: center;
-    padding: 15px;
-    margin: 30px auto 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 
-
-
-/* Rodapé */
-footer p {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-/* Imagem lateral esquerda */
 .decor-left {
     position: fixed;
-    right: 2%;
+    right: 1%;
+    top: 200px;
     bottom: 0;
-    height: 60vh; /* ocupa toda a altura da tela */
+    height: 45vh;
     z-index: 5;
     opacity: 0.95;
 }
 
-/* Foto */
-.decor-center {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 240px; /* Aumenta o tamanho da logo */
-    z-index: 10;
-    opacity: 1;
-    width: 200px; /* Defina a largura */
-    height: 200px; /* Defina a altura igual à largura */
-    border-radius: 50%; /* Arredonda os cantos */
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
-}
-
-
-
-/* Título ajustado */
-header h1 {
-    margin-top: 250px; /* espaço para foto acima */
-    width: 90%;
-    max-width: 600px;
-    background-color: #ffc0cb;
-    color: white;
-    text-align: center;
-    padding: px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-/* Imagem lateral direita */
 .decor-right {
     position: fixed;
     top: 200px;
     left: 5%;
     bottom: 0;
-    height: 50vh; 
+    height: 50vh;
     z-index: 5;
     opacity: 0.95;
 }
 
- /*responsividade*/
- @media (max-width: 768px) {
-    .decor-left {
-        display: none;
-    }
+.decor-center {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 10;
+    opacity: 1;
+}
 
-    .decor-center {
-        width: 120px;
-        top: 10px;
-    }
 
-    header h1 {
+main {
+    flex: 1;
+    max-width: 700px;
+    margin: 220px auto 20px; /* Espaço para a foto central */
+    padding: 20px;
+    width: 100%;
+}
+
+/* Título */
+header h1 {
+    background-color: #ffc0cb;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block; /* Ajusta ao conteúdo */
+    width: auto;
+    max-width: 90%;
+}
+
+
+.card {
+    background-color: #ffe4e9;
+    border-radius: 20px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 10px rgba(255, 140, 170, 0.15);
+    border: 1px solid #ffd0d8;
+}
+
+
+.bio {
+    background-color: #fff5f8;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    border: 1px solid #ffd5dd;
+    font-size: 1rem;
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.info-item {
+    background-color: white;
+    padding: 10px 12px;
+    border-radius: 25px;
+    border: 1px solid #ffc0cb;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+}
+
+.info-item i {
+    color: #ff99aa;
+    font-size: 1.1rem;
+    min-width: 20px;
+}
+
+
+footer {
+    background-color: #ffc0cb;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+
+    main {
         margin-top: 150px;
     }
- }
+    
+    .decor-center {
+        width: 150px;
+        height: 150px;
+    }
+
+
