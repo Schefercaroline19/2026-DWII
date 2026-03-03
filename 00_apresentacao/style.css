@@ -64,7 +64,7 @@ nav {
 main {
     flex: 1;
     max-width: 700px;
-    margin: 220px auto 20px; /* Espaço para a foto central */
+    margin: 220px auto 20px; 
     padding: 20px;
     width: 100%;
 }
@@ -80,7 +80,7 @@ header h1 {
     margin-bottom: 20px;
     font-size: 1.5rem;
     font-weight: 500;
-    display: inline-block; /* Ajusta ao conteúdo */
+    display: inline-block; 
     width: auto;
     max-width: 90%;
 }
